@@ -1,0 +1,12 @@
+
+
+bu projeyi  htdocs(ex: DocumentRoot "c:/Apache24/htdocs) içinde todo klasörü oluşturup bu dizinin içinde çalıştırın
+
+
+aksi taktirde  ...:::  header("Location: /todo/index.php");:::::...... çalışmayacak
+
+    private function save()
+    {
+        file_put_contents($this->db,json_encode($this->todoItemList));
+        header("Location: /todo/index.php");
+    }
